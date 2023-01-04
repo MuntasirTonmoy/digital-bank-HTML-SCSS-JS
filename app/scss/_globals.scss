@@ -55,8 +55,14 @@ button,
 
 .hide-sm {
   //hide for mobile and tablet
+  @include breakpoint-down(md) {
+    display: none;
+  }
 }
 
 .hide-lg {
   //hide for desktop or laptop
+  @include breakpoint-up(lg) {
+    display: none;
+  }
 }
