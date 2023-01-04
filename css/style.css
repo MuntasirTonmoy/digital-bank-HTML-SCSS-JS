@@ -40,8 +40,8 @@ a:hover {
 
 button,
 .button {
-  padding: 1rem 1.875rem;
-  border-radius: 50px;
+  padding: 0.875rem 2.1875rem;
+  border-radius: 3.125rem;
   border: 0;
   font-weight: 400;
   cursor: pointer;
@@ -61,13 +61,17 @@ button,
 }
 
 nav {
-  padding: 24px;
+  padding: 1.0625rem 1.5rem;
 }
 
+.header__logo img {
+  width: 8.8125rem;
+  height: 1.375rem;
+}
 .header__menu > span {
   display: block;
-  width: 26px;
-  height: 2px;
+  width: 1.625rem;
+  height: 0.125rem;
   background-color: hsl(233deg, 26%, 24%);
 }
 .header__menu > span:not(:last-child) {
@@ -76,9 +80,13 @@ nav {
 .header__links a {
   color: hsl(233deg, 8%, 62%);
   font-size: 0.875rem;
+  transition: color 200ms ease-in-out;
 }
 .header__links a:not(:last-child) {
-  margin-right: 32px;
+  margin-right: 2rem;
+}
+.header__links a:hover {
+  color: hsl(233deg, 26%, 24%);
 }
 .header__cta {
   font-size: 0.875rem;
