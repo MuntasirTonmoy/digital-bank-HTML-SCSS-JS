@@ -24,6 +24,10 @@ nav {
     a {
       color: $grayishBlue;
       font-size: $font-sm;
+
+      &:not(:last-child) {
+        margin-right: 32px;
+      }
     }
   }
 
