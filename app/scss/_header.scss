@@ -17,9 +17,22 @@ nav {
       width: 1.625rem;
       height: 0.125rem;
       background-color: $darkBlue;
+      transform-origin: center;
 
       &:not(:last-child) {
         margin-bottom: 3px;
+      }
+    }
+
+    &.open {
+      > span:first-child {
+        transform: rotate(45deg);
+      }
+      > span:nth-child(2) {
+        opacity: 0;
+      }
+      > span:last-child {
+        transform: rotate(-45deg);
       }
     }
   }
