@@ -78,9 +78,20 @@ nav {
   margin-bottom: 3px;
 }
 .header__links a {
+  position: relative;
   color: hsl(233deg, 8%, 62%);
   font-size: 0.875rem;
   transition: color 200ms ease-in-out;
+}
+.header__links a::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  background: lime;
+  height: 0.3125rem;
+  left: 0;
+  right: 0;
+  bottom: -1.875rem;
 }
 .header__links a:not(:last-child) {
   margin-right: 2rem;

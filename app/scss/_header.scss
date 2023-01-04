@@ -26,9 +26,21 @@ nav {
 
   &__links {
     a {
+      position: relative;
       color: $grayishBlue;
       font-size: $font-sm;
       transition: color 200ms ease-in-out;
+
+      &::after {
+        content: "";
+        width: 100%;
+        position: absolute;
+        background: lime;
+        height: 0.3125rem;
+        left: 0;
+        right: 0;
+        bottom: -1.875rem;
+      }
 
       &:not(:last-child) {
         margin-right: 2rem;
