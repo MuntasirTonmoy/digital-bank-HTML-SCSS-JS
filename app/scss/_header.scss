@@ -62,5 +62,9 @@ nav {
   &__cta {
     font-size: $font-sm;
     color: $white;
+
+    &:hover {
+      opacity: 0.75;
+    }
   }
 }

@@ -108,4 +108,7 @@ nav {
 .header__cta {
   font-size: 0.875rem;
   color: hsl(0deg, 0%, 100%);
+}
+.header__cta:hover {
+  opacity: 0.75;
 }/*# sourceMappingURL=style.css.map */
