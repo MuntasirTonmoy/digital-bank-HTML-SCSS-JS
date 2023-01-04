@@ -73,7 +73,7 @@ nav {
   width: 1.625rem;
   height: 0.125rem;
   background-color: hsl(233deg, 26%, 24%);
-  transform-origin: center;
+  transform-origin: 0.375rem 0.0625rem;
 }
 .header__menu > span:not(:last-child) {
   margin-bottom: 3px;
