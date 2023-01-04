@@ -17,6 +17,7 @@ nav {
       width: 1.625rem;
       height: 0.125rem;
       background-color: $darkBlue;
+      transition: transform 200ms ease-in-out;
       transform-origin: 0.375rem 0.0625rem;
 
       &:not(:last-child) {
