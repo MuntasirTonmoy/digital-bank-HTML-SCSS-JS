@@ -52,3 +52,11 @@ button,
   cursor: pointer;
   background: linear-gradient(to right, $limeGreen, $brightCyan);
 }
+
+.hide-sm {
+  //hide for mobile and tablet
+}
+
+.hide-lg {
+  //hide for desktop or laptop
+}

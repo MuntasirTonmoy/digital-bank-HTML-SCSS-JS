@@ -1,0 +1,15 @@
+// breakpoints
+@media (min-width: 64em) {
+  //code here
+}
+
+$breakpoints-up: (
+  "md": 40em,
+  "lg": 64em,
+  "xl": 87.5em,
+);
+$breakpoints-down: (
+  "sm": 39.9375em,
+  "md": 63.9375,
+  "lg": 87.4375,
+);
