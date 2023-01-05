@@ -84,6 +84,11 @@ body {
   color: hsl(233deg, 8%, 62%);
 }
 
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 a,
 a:visited,
 a:hover {
@@ -161,7 +166,9 @@ button,
 }
 .header__menu {
   background-color: hsl(0deg, 0%, 100%);
+  margin-top: 1.5rem;
   padding: 1.625rem 0;
+  border-radius: 3px;
 }
 .header__menu a {
   display: block;
@@ -207,5 +214,6 @@ button,
 }
 
 nav {
-  padding: 1.0625rem 1.5rem;
+  padding-top: 1.0625rem;
+  padding-bottom: 1.0625rem;
 }/*# sourceMappingURL=style.css.map */
