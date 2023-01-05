@@ -1,8 +1,8 @@
 const header = document.querySelector(".header");
-const headerMenu = document.querySelector(".header__menu");
+const headerToggle = document.querySelector(".header__toggle");
 const overlay = document.querySelector(".overlay");
 
-headerMenu.addEventListener("click", () => {
+headerToggle.addEventListener("click", () => {
   header.classList.toggle("open");
   if (header.classList.contains("open")) {
     overlay.classList.add("fade-in");

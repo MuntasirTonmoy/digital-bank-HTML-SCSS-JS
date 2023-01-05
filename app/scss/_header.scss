@@ -3,7 +3,7 @@
     .overlay {
       animation: fade-in 200ms ease-in-out forwards;
     }
-    .header__menu {
+    .header__toggle {
       > span:first-child {
         transform: rotate(45deg);
       }
@@ -30,8 +30,8 @@
     }
   }
 
-  //* mobile menu
-  &__menu {
+  //* mobile toggle
+  &__toggle {
     > span {
       display: block;
       width: 1.625rem;
