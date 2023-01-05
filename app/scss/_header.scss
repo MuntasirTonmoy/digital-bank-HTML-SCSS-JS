@@ -18,7 +18,7 @@ nav {
       height: 0.125rem;
       background-color: $darkBlue;
       transition: transform 200ms ease-in-out;
-      transform-origin: 0.375rem 0.0625rem;
+      transform-origin: 0.4375rem;
 
       &:not(:last-child) {
         margin-bottom: 3px;
@@ -82,4 +82,10 @@ nav {
       opacity: 0.75;
     }
   }
+}
+
+.overlay {
+  background: linear-gradient($darkBlue, transparent);
+  position: fixed;
+  inset: 56px 0 0 0;
 }

@@ -74,7 +74,7 @@ nav {
   height: 0.125rem;
   background-color: hsl(233deg, 26%, 24%);
   transition: transform 200ms ease-in-out;
-  transform-origin: 0.375rem 0.0625rem;
+  transform-origin: 0.4375rem;
 }
 .header__menu > span:not(:last-child) {
   margin-bottom: 3px;
@@ -123,4 +123,10 @@ nav {
 }
 .header__cta:hover {
   opacity: 0.75;
+}
+
+.overlay {
+  background: linear-gradient(hsl(233deg, 26%, 24%), transparent);
+  position: fixed;
+  inset: 56px 0 0 0;
 }/*# sourceMappingURL=style.css.map */
