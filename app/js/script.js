@@ -1,5 +1,5 @@
-const headerMenu = document.querySelector(".header__menu");
+const header = document.querySelector(".header");
 
-headerMenu.addEventListener("click", () => {
-  headerMenu.classList.toggle("open");
+header.addEventListener("click", () => {
+  header.classList.toggle("open");
 });

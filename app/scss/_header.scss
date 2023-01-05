@@ -1,4 +1,28 @@
 .header {
+  &.open {
+    .overlay {
+      animation: fade-in 200ms ease-in-out forwards;
+    }
+    .header__menu {
+      > span:first-child {
+        transform: rotate(45deg);
+      }
+      > span:nth-child(2) {
+        opacity: 0;
+      }
+      > span:last-child {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  .overlay {
+    background: linear-gradient($darkBlue, transparent);
+    position: fixed;
+    inset: 3.5rem 0 0 0;
+    opacity: 0;
+  }
+
   &__logo {
     img {
       width: 8.8125rem;
@@ -18,21 +42,6 @@
 
       &:not(:last-child) {
         margin-bottom: 3px;
-      }
-    }
-
-    &.open {
-      .overlay {
-        animation: fade-in 200ms ease-in-out forwards;
-      }
-      > span:first-child {
-        transform: rotate(45deg);
-      }
-      > span:nth-child(2) {
-        opacity: 0;
-      }
-      > span:last-child {
-        transform: rotate(-45deg);
       }
     }
   }
@@ -81,12 +90,6 @@
       opacity: 0.75;
     }
   }
-}
-
-.overlay {
-  background: linear-gradient($darkBlue, transparent);
-  position: fixed;
-  inset: 3.5rem 0 0 0;
 }
 
 nav {
