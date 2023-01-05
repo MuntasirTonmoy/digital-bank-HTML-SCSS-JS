@@ -46,6 +46,18 @@
     }
   }
 
+  &__menu {
+    background-color: $white;
+    padding: 1.625rem 0;
+
+    a {
+      display: block;
+      text-align: center;
+      color: $darkBlue;
+      padding: 0.625rem;
+    }
+  }
+
   &__links {
     a {
       position: relative;
