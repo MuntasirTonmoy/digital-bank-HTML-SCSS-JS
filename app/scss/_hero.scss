@@ -10,7 +10,7 @@
 
   &__img {
     // mobile background
-    min-height: 17.5rem;
+    min-height: 280px;
     position: relative;
     background-image: url("/images/bg-intro-mobile.svg");
     background-size: cover;
@@ -19,7 +19,7 @@
 
     //change the position of the background on tablet
     @include breakpoint-up(medium) {
-      min-height: 25rem;
+      min-height: 400px;
       background-position: center 70%;
     }
 
@@ -27,7 +27,7 @@
     @include breakpoint-up(lg) {
       flex: 3;
       order: 2;
-      height: 41rem; //flexbox give height base on content
+      height: 656px; //flexbox give height base on content
       background-image: none;
     }
 
@@ -38,10 +38,10 @@
         position: absolute;
         height: 100%;
         width: 150%;
-        background-image: url("/images/bg-intro-desktop.svg");
+        background-image: url(/images/bg-intro-desktop.svg);
         background-repeat: no-repeat;
-        background-position: center bottom;
-        background-size: 122%;
+        background-position: -2px -231px;
+        background-size: 120%;
       }
     }
 
@@ -58,15 +58,15 @@
 
       //mobile image on tab screen
       @include breakpoint-up(md) {
-        background-size: 52%;
+        background-size: 35%;
       }
 
       // mobile image on laptop screen
       @include breakpoint-up(lg) {
         width: 120%;
         height: 122%;
-        background-size: 94%;
-        background-position: center 150%;
+        background-size: 96%;
+        background-position: center 111%;
         left: 22%;
       }
     }
@@ -84,9 +84,9 @@
     h1 {
       font-weight: 300;
       line-height: 1.15;
-      font-size: 2.3125rem;
+      font-size: 37px;
       color: $darkBlue;
-      margin-bottom: 1.5rem;
+      margin-bottom: 24px;
 
       @include breakpoint-up(lg) {
         font-size: $font-xl;
@@ -95,7 +95,7 @@
 
     p {
       line-height: 1.5;
-      margin-bottom: 2.25rem;
+      margin-bottom: 36px;
     }
   }
 }
