@@ -269,10 +269,6 @@ nav {
 .hero__img {
   position: relative;
   min-height: 17.5rem;
-  background-image: url("/images/bg-intro-mobile.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 @media (min-width: 64em) {
   .hero__img {
@@ -286,10 +282,29 @@ nav {
   height: 100%;
   width: 100%;
   position: absolute;
+  background-image: url("/images/bg-intro-desktop.svg");
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center -116px;
+}
+@media (min-width: 64em) {
+  .hero__img::before {
+    width: 150%;
+    background-size: 122%;
+    background-repeat: no-repeat;
+    background-position: 5% 77%;
+  }
+}
+.hero__img::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
   background-image: url("/images/image-mockups.png");
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center -116px;
+  opacity: 0;
 }
 .hero__text {
   text-align: center;
