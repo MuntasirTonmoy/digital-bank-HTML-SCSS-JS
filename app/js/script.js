@@ -2,6 +2,7 @@ const header = document.querySelector(".header");
 const headerToggle = document.querySelector(".header__toggle");
 const overlay = document.querySelector(".overlay");
 const fadeElms = document.querySelectorAll(".has-fade");
+const body = document.getElementsByTagName("body");
 
 headerToggle.addEventListener("click", () => {
   header.classList.toggle("open");

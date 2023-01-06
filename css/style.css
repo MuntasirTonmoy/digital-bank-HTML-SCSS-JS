@@ -90,6 +90,9 @@ body {
   font-weight: 300;
   color: hsl(233deg, 8%, 62%);
 }
+body.noscroll {
+  overflow: hidden;
+}
 
 .container {
   padding-left: 1.5rem;
@@ -153,7 +156,7 @@ button,
 .header .overlay {
   background: linear-gradient(hsl(233deg, 26%, 24%), transparent);
   position: fixed;
-  inset: 3.5rem 0 0 0;
+  inset: 0;
   opacity: 0;
 }
 .header__logo img {
@@ -225,6 +228,8 @@ button,
 }
 
 nav {
+  position: relative;
+  background-color: hsl(0deg, 0%, 100%);
   padding-top: 1.0625rem;
   padding-bottom: 1.0625rem;
 }/*# sourceMappingURL=style.css.map */

@@ -17,6 +17,10 @@ body {
   font-size: $font-medium;
   font-weight: 300;
   color: $grayishBlue;
+
+  &.noscroll {
+    overflow: hidden;
+  }
 }
 
 //spacing
