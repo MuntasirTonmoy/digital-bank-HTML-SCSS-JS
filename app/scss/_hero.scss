@@ -1,4 +1,9 @@
 .hero {
+  @include breakpoint-up(lg) {
+    display: flex;
+    align-items: center;
+  }
+
   &__img {
     z-index: -2;
     position: relative;
@@ -7,6 +12,12 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+
+    @include breakpoint-up(lg) {
+      flex: 1;
+      order: 2;
+      height: 41rem; //flexbox give height base on content
+    }
 
     &::before {
       content: "";
@@ -21,6 +32,11 @@
   }
 
   &__text {
+    @include breakpoint-up(lg) {
+      flex: 1;
+      order: 1;
+    }
+
     text-align: center;
     h1 {
       font-weight: 300;

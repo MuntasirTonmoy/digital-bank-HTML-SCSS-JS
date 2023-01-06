@@ -101,11 +101,20 @@ h3 {
 }
 
 .container {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+.container--p {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
-
-.tb {
+.container--px {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.container--py {
   padding-top: 2.25rem;
   padding-bottom: 2.25rem;
 }
@@ -244,6 +253,12 @@ nav {
   padding-bottom: 1.0625rem;
 }
 
+@media (min-width: 64em) {
+  .hero {
+    display: flex;
+    align-items: center;
+  }
+}
 .hero__img {
   z-index: -2;
   position: relative;
@@ -252,6 +267,13 @@ nav {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+}
+@media (min-width: 64em) {
+  .hero__img {
+    flex: 1;
+    order: 2;
+    height: 41rem;
+  }
 }
 .hero__img::before {
   content: "";
@@ -265,6 +287,12 @@ nav {
 }
 .hero__text {
   text-align: center;
+}
+@media (min-width: 64em) {
+  .hero__text {
+    flex: 1;
+    order: 1;
+  }
 }
 .hero__text h1 {
   font-weight: 300;
