@@ -23,10 +23,21 @@ body {
   }
 }
 
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
 //spacing
 .container {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.tb {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
 }
 
 a,
@@ -58,10 +69,16 @@ button,
   padding: 0.875rem 2.1875rem;
   border-radius: 3.125rem;
   border: 0;
+  font-size: $font-sm;
   font-weight: 400;
   cursor: pointer;
   background: linear-gradient(to right, $limeGreen, $brightCyan);
   color: $white;
+  transition: opacity 200ms ease-in-out;
+
+  &:hover {
+    opacity: 0.75;
+  }
 }
 
 .hide-sm {
