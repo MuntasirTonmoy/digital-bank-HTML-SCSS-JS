@@ -9,48 +9,65 @@
   }
 
   &__img {
-    position: relative;
+    // mobile background
     min-height: 17.5rem;
+    position: relative;
     background-image: url("/images/bg-intro-mobile.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 
+    //change the position of the background on tablet
+    @include breakpoint-up(medium) {
+      min-height: 25rem;
+      background-position: center 70%;
+    }
+
+    //remove the background on laptop
     @include breakpoint-up(lg) {
       flex: 3;
       order: 2;
       height: 41rem; //flexbox give height base on content
+      background-image: none;
     }
 
     &::before {
-      //mobile
-      content: "";
-      height: 106%;
-      width: 100%;
-      position: absolute;
-      background-image: url(/images/image-mockups.png);
-      background-size: 95%;
-      background-repeat: no-repeat;
-      background-position: center -119px;
-
+      // background on laptop
       @include breakpoint-up(lg) {
+        content: "";
+        position: absolute;
+        height: 100%;
         width: 150%;
-        background-size: 122%;
+        background-image: url("/images/bg-intro-desktop.svg");
         background-repeat: no-repeat;
-        background-position: 5% 77%;
+        background-position: center bottom;
+        background-size: 122%;
       }
     }
 
-    @include breakpoint-up(lg) {
-      &::after {
-        /*  content: "";
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        background-image: url("/images/image-mockups.png");
-        background-size: 93%;
-        background-repeat: no-repeat;
-        background-position: center bottom; */
+    &::after {
+      // mobile image on mobile screen
+      content: "";
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background-image: url("/images/image-mockups.png");
+      background-size: 93%;
+      background-repeat: no-repeat;
+      background-position: center bottom;
+
+      //mobile image on tab screen
+      @include breakpoint-up(md) {
+        background-size: 52%;
+      }
+
+      // mobile image on laptop screen
+      @include breakpoint-up(lg) {
+        width: 120%;
+        height: 122%;
+        background-size: 94%;
+        background-position: center 150%;
+        left: 22%;
       }
     }
   }
@@ -63,6 +80,7 @@
       order: 1;
       text-align: left;
     }
+
     h1 {
       font-weight: 300;
       line-height: 1.15;
