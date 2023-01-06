@@ -78,6 +78,7 @@ a:hover {
 //we may use .button in an anchor link <a>
 button,
 .button {
+  display: inline-block;
   padding: 0.875rem 2.1875rem;
   border-radius: 3.125rem;
   border: 0;

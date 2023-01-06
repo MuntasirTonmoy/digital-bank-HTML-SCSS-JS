@@ -140,6 +140,7 @@ a:hover {
 
 button,
 .button {
+  display: inline-block;
   padding: 0.875rem 2.1875rem;
   border-radius: 3.125rem;
   border: 0;
@@ -185,6 +186,7 @@ button:hover,
   position: fixed;
   inset: 0;
   opacity: 0;
+  z-index: 3;
 }
 .header__logo img {
   width: 8.8125rem;
@@ -210,6 +212,7 @@ button:hover,
   margin-top: 1.5rem;
   padding: 1.625rem 0;
   border-radius: 5px;
+  z-index: 4;
 }
 .header__menu a {
   display: block;
@@ -251,16 +254,19 @@ nav {
   background-color: hsl(0deg, 0%, 100%);
   padding-top: 1.0625rem;
   padding-bottom: 1.0625rem;
+  z-index: 5;
 }
 
+.hero {
+  background-color: hsl(0deg, 0%, 98%);
+}
 @media (min-width: 64em) {
-  .hero {
+  .hero .container {
     display: flex;
     align-items: center;
   }
 }
 .hero__img {
-  z-index: -2;
   position: relative;
   min-height: 17.5rem;
   background-image: url("/images/bg-intro-mobile.svg");
@@ -270,7 +276,7 @@ nav {
 }
 @media (min-width: 64em) {
   .hero__img {
-    flex: 1;
+    flex: 3;
     order: 2;
     height: 41rem;
   }
@@ -290,8 +296,9 @@ nav {
 }
 @media (min-width: 64em) {
   .hero__text {
-    flex: 1;
+    flex: 2;
     order: 1;
+    text-align: left;
   }
 }
 .hero__text h1 {
@@ -301,8 +308,12 @@ nav {
   color: hsl(233deg, 26%, 24%);
   margin-bottom: 1.5rem;
 }
+@media (min-width: 64em) {
+  .hero__text h1 {
+    font-size: 3.25rem;
+  }
+}
 .hero__text p {
   line-height: 1.5;
   margin-bottom: 2.25rem;
-  font-size: 14px;
 }/*# sourceMappingURL=style.css.map */

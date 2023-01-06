@@ -1,11 +1,14 @@
 .hero {
-  @include breakpoint-up(lg) {
-    display: flex;
-    align-items: center;
+  background-color: $veryLightGray;
+
+  .container {
+    @include breakpoint-up(lg) {
+      display: flex;
+      align-items: center;
+    }
   }
 
   &__img {
-    z-index: -2;
     position: relative;
     min-height: 17.5rem;
     background-image: url("/images/bg-intro-mobile.svg");
@@ -14,7 +17,7 @@
     background-position: center center;
 
     @include breakpoint-up(lg) {
-      flex: 1;
+      flex: 3;
       order: 2;
       height: 41rem; //flexbox give height base on content
     }
@@ -32,24 +35,28 @@
   }
 
   &__text {
-    @include breakpoint-up(lg) {
-      flex: 1;
-      order: 1;
-    }
-
     text-align: center;
+
+    @include breakpoint-up(lg) {
+      flex: 2;
+      order: 1;
+      text-align: left;
+    }
     h1 {
       font-weight: 300;
       line-height: 1.15;
       font-size: 2.3125rem;
       color: $darkBlue;
       margin-bottom: 1.5rem;
+
+      @include breakpoint-up(lg) {
+        font-size: $font-xl;
+      }
     }
 
     p {
       line-height: 1.5;
       margin-bottom: 2.25rem;
-      font-size: 14px;
     }
   }
 }
