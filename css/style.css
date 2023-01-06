@@ -126,6 +126,7 @@ button,
   font-weight: 400;
   cursor: pointer;
   background: linear-gradient(to right, hsl(136deg, 65%, 51%), hsl(192deg, 70%, 51%));
+  color: hsl(0deg, 0%, 100%);
 }
 
 @media (max-width: 63.9375em) {
