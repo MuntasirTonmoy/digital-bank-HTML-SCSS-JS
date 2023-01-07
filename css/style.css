@@ -344,11 +344,11 @@ nav {
     content: "";
     position: absolute;
     height: 100%;
-    width: 150%;
+    width: 183%;
     background-image: url(/images/bg-intro-desktop.svg);
     background-repeat: no-repeat;
     background-position: -0.125rem -14.4375rem;
-    background-size: 120%;
+    background-size: 100%;
   }
 }
 .hero__img::after {
@@ -377,6 +377,7 @@ nav {
 }
 .hero__text {
   text-align: center;
+  padding-top: 2.8125rem;
 }
 @media (min-width: 64em) {
   .hero__text {
