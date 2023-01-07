@@ -18,7 +18,7 @@
     background-position: center center;
 
     //change the position of the background on tablet
-    @include breakpoint-up(medium) {
+    @include breakpoint-up(md) {
       min-height: 400px;
       background-position: center 70%;
     }
