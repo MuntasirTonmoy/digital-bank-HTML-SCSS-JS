@@ -10,7 +10,7 @@
 
   &__img {
     // mobile background
-    min-height: 280px;
+    min-height: 17.5rem;
     position: relative;
     background-image: url("/images/bg-intro-mobile.svg");
     background-size: cover;
@@ -19,7 +19,7 @@
 
     //change the position of the background on tablet
     @include breakpoint-up(md) {
-      min-height: 400px;
+      min-height: 25rem;
       background-position: center 70%;
     }
 
@@ -27,7 +27,7 @@
     @include breakpoint-up(lg) {
       flex: 3;
       order: 2;
-      height: 656px; //flexbox give height base on content
+      height: 41rem; //flexbox give height base on content
       background-image: none;
     }
 
@@ -40,7 +40,7 @@
         width: 150%;
         background-image: url(/images/bg-intro-desktop.svg);
         background-repeat: no-repeat;
-        background-position: -2px -231px;
+        background-position: -0.125rem -14.4375rem;
         background-size: 120%;
       }
     }
@@ -58,7 +58,7 @@
 
       //mobile image on tab screen
       @include breakpoint-up(md) {
-        background-size: 35%;
+        background-size: 50%;
       }
 
       // mobile image on laptop screen
