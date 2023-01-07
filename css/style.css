@@ -390,4 +390,12 @@ nav {
   .feature__item {
     flex: 1;
   }
+}
+.feature__icon {
+  margin-bottom: 1.875rem;
+}
+@media (min-width: 40em) {
+  .feature__icon {
+    margin-bottom: 2.75rem;
+  }
 }/*# sourceMappingURL=style.css.map */
