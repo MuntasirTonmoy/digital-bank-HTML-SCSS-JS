@@ -9,7 +9,6 @@
     margin-bottom: 3.75rem;
 
     @include breakpoint-up(lg) {
-      text-align: left;
       max-width: 60%;
     }
   }

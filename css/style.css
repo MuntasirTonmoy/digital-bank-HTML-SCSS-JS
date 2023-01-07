@@ -399,7 +399,6 @@ nav {
 }
 @media (min-width: 64em) {
   .feature__intro {
-    text-align: left;
     max-width: 60%;
   }
 }
