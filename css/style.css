@@ -98,6 +98,19 @@ h1,
 h2,
 h3 {
   margin-top: 0;
+  font-weight: 300;
+  line-height: 1.15;
+  color: hsl(233deg, 26%, 24%);
+}
+
+h1 {
+  font-size: 2.3125rem;
+  margin-bottom: 24px;
+}
+@media (min-width: 64em) {
+  h1 {
+    font-size: 3.25rem;
+  }
 }
 
 h2 {
@@ -343,18 +356,6 @@ nav {
     flex: 2;
     order: 1;
     text-align: left;
-  }
-}
-.hero__text h1 {
-  font-weight: 300;
-  line-height: 1.15;
-  font-size: 37px;
-  color: hsl(233deg, 26%, 24%);
-  margin-bottom: 24px;
-}
-@media (min-width: 64em) {
-  .hero__text h1 {
-    font-size: 3.25rem;
   }
 }
 .hero__text p {

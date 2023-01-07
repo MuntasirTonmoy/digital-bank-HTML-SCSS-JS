@@ -81,18 +81,6 @@
       text-align: left;
     }
 
-    h1 {
-      font-weight: 300;
-      line-height: 1.15;
-      font-size: 37px;
-      color: $darkBlue;
-      margin-bottom: 24px;
-
-      @include breakpoint-up(lg) {
-        font-size: $font-xl;
-      }
-    }
-
     p {
       line-height: 1.5;
       margin-bottom: 36px;
