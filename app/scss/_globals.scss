@@ -29,7 +29,6 @@ h3 {
   margin-top: 0;
   font-weight: 300;
   line-height: 1.15;
-
   color: $darkBlue;
 }
 
@@ -52,6 +51,16 @@ h2 {
   }
 }
 
+/* h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+
+  @include breakpoint-up(lg) {
+    font-size: 1.5rem;
+    margin-bottom: 2.125rem;
+  }
+} */
+
 p {
   line-height: 1.5;
   margin-bottom: 2.25rem;
@@ -62,10 +71,15 @@ p {
   margin: 0 auto;
 
   &--p {
-    padding-top: 2.25rem;
-    padding-bottom: 2.25rem;
+    padding-top: 4.375rem;
+    padding-bottom: 4.375rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+
+    @include breakpoint-up(lg) {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
   }
 
   &--px {
@@ -74,8 +88,13 @@ p {
   }
 
   &--py {
-    padding-top: 2.25rem;
-    padding-bottom: 2.25rem;
+    padding-top: 4.375rem;
+    padding-bottom: 4.375rem;
+
+    @include breakpoint-up(lg) {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
   }
 }
 
