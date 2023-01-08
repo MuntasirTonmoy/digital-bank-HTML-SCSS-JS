@@ -34,19 +34,26 @@
   }
 
   &__text {
-    padding: 1.875rem 1.875rem 2.5rem;
-
+    padding: 1.875rem 1.25rem 2.5rem;
+    color: $grayishBlue;
     @include breakpoint-up(lg) {
       padding: 1.875rem 1.5625rem;
     }
   }
 
   &__author {
+    font-size: 0.625rem;
+    margin-bottom: 0.75rem;
   }
 
   &__title {
+    margin-bottom: 0.625rem;
+    font-size: $font-medium;
+    line-height: 1.2;
+    color: $darkBlue;
   }
 
   &__description {
+    font-size: 0.8125rem;
   }
 }

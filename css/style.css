@@ -484,10 +484,24 @@ nav {
   background-position: center center;
 }
 .article__text {
-  padding: 1.875rem 1.875rem 2.5rem;
+  padding: 1.875rem 1.25rem 2.5rem;
+  color: hsl(233deg, 8%, 62%);
 }
 @media (min-width: 64em) {
   .article__text {
     padding: 1.875rem 1.5625rem;
   }
+}
+.article__author {
+  font-size: 0.625rem;
+  margin-bottom: 0.75rem;
+}
+.article__title {
+  margin-bottom: 0.625rem;
+  font-size: 1.0625rem;
+  line-height: 1.2;
+  color: hsl(233deg, 26%, 24%);
+}
+.article__description {
+  font-size: 0.8125rem;
 }/*# sourceMappingURL=style.css.map */
