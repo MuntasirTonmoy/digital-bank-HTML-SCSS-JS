@@ -8,6 +8,7 @@
 
   &__grid {
     display: grid;
+    gap: 1.875rem;
     grid-template-columns: 1fr;
     /* grid-template-columns: repeat(auto-fit, minmax(14.375rem, 1fr)); */
 
@@ -20,12 +21,24 @@
   }
 
   &__item {
+    background-color: $white;
+    border-radius: 0.3125rem;
+    overflow: hidden;
   }
 
   &__image {
+    height: 12.5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 
   &__text {
+    padding: 1.875rem 1.875rem 2.5rem;
+
+    @include breakpoint-up(lg) {
+      padding: 1.875rem 1.5625rem;
+    }
   }
 
   &__author {
