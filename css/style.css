@@ -456,6 +456,15 @@ nav {
   background-color: hsl(0deg, 0%, 98%);
 }
 
+.article__content h2 {
+  text-align: center;
+}
+@media (min-width: 40em) {
+  .article__content h2 {
+    -moz-text-align-last: left;
+         text-align-last: left;
+  }
+}
 .article__grid {
   display: grid;
   gap: 1.875rem;
@@ -476,7 +485,7 @@ nav {
   background-color: hsl(0deg, 0%, 100%);
   border-radius: 0.3125rem;
   overflow: hidden;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   transition: transform 200ms ease-in-out;
 }
 .article__item:hover {
