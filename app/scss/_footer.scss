@@ -39,6 +39,16 @@
     a {
       display: inline-block;
       height: 1.25rem;
+
+      svg path {
+        transition: fill 200ms ease-in-out;
+      }
+
+      &:hover {
+        svg path {
+          fill: $limeGreen;
+        }
+      }
     }
     a:not(:last-child) {
       margin-right: 1rem;
@@ -55,6 +65,15 @@
     flex-direction: column;
     align-items: center;
     font-size: 0.9375rem;
+
+    a {
+      line-height: 2.25;
+      transition: color 200ms ease-in-out;
+
+      &:hover {
+        color: $limeGreen;
+      }
+    }
 
     @include breakpoint-up(lg) {
       justify-content: space-between;
@@ -74,10 +93,6 @@
       @include breakpoint-up(lg) {
         grid-area: links2;
       }
-    }
-
-    a {
-      line-height: 2.25;
     }
   }
 

@@ -125,9 +125,11 @@ a:hover {
 //we may use .button in an anchor link <a>
 button,
 .button {
+  position: relative;
   display: inline-block;
   padding: 0.875rem 2.1875rem;
   border-radius: 3.125rem;
+  overflow: hidden;
   border: 0;
   font-size: $font-sm;
   font-weight: 400;
@@ -136,8 +138,16 @@ button,
   color: $white;
   transition: opacity 200ms ease-in-out;
 
-  &:hover {
-    opacity: 0.75;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+  }
+  &:hover::before {
+    opacity: 1;
   }
 }
 

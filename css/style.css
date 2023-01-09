@@ -192,9 +192,11 @@ a:hover {
 
 button,
 .button {
+  position: relative;
   display: inline-block;
   padding: 0.875rem 2.1875rem;
   border-radius: 3.125rem;
+  overflow: hidden;
   border: 0;
   font-size: 0.875rem;
   font-weight: 400;
@@ -203,9 +205,18 @@ button,
   color: hsl(0deg, 0%, 100%);
   transition: opacity 200ms ease-in-out;
 }
-button:hover,
-.button:hover {
-  opacity: 0.75;
+button::before,
+.button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+button:hover::before,
+.button:hover::before {
+  opacity: 1;
 }
 
 @media (max-width: 63.9375em) {
@@ -561,6 +572,12 @@ nav {
   display: inline-block;
   height: 1.25rem;
 }
+.footer__social a svg path {
+  transition: fill 200ms ease-in-out;
+}
+.footer__social a:hover svg path {
+  fill: hsl(136deg, 65%, 51%);
+}
 .footer__social a:not(:last-child) {
   margin-right: 1rem;
 }
@@ -575,6 +592,13 @@ nav {
   flex-direction: column;
   align-items: center;
   font-size: 0.9375rem;
+}
+.footer__links a {
+  line-height: 2.25;
+  transition: color 200ms ease-in-out;
+}
+.footer__links a:hover {
+  color: hsl(136deg, 65%, 51%);
 }
 @media (min-width: 64em) {
   .footer__links {
@@ -596,9 +620,6 @@ nav {
   .footer__links.col2 {
     grid-area: links2;
   }
-}
-.footer__links a {
-  line-height: 2.25;
 }
 @media (max-width: 63.9375em) {
   .footer__cta a.button {
